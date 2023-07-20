@@ -5,6 +5,8 @@
 
 // Solution
 
+// Taking the numbers in an array 1 by 1 and multiplying them
+
 function grow(x){
     let result = 1;
     for (let i = 0; i < x.length; i++) {
