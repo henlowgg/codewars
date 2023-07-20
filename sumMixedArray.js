@@ -9,6 +9,8 @@ function sumMix(x){
     return sumMix(x);
 }
 
+// using Array.prototype.reduce()
+
 // Sample Tests
 
 const chai = require("chai");
