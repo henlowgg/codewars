@@ -14,3 +14,13 @@ function areYouPlayingBanjo(name) {
 
   return name + predicate;
 }
+
+// different solution in an if/else statement vvv
+
+function areYouPlayingBanjo(name) {
+    if (name[0].toLowerCase() === 'r') {
+      return name + ' plays banjo';
+    } else {
+      return name + ' does not play banjo';
+    }
+  }
