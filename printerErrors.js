@@ -17,9 +17,19 @@
 
 // Solution
 
-function printerError(s) {
+// function printerError(s) {
+//     result = 0
+//   for (let index in s) {
+//     if (s[index] > 's') {
+//       result ++
+//     }
+//   }
+//   return result + '/' + s.length
+// }
 
-}
+// Solution 
+
+const printerError = s => `${(s.match(/[n-z]/g) || []).length}/${s.length}`
 
 // Sample Tests
 
