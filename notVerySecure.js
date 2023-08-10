@@ -8,8 +8,8 @@
 
 // Solution
 
-function alphanumeric(string) {
-    // your code here
+const alphanumeric = s => {
+    
 }
 
 // Sample Tests
