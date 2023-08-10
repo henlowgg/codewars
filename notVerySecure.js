@@ -8,9 +8,8 @@
 
 // Solution
 
-const alphanumeric = s => {
-    
-}
+const alphanumeric = s => /^[A-Z0-9]+$/i.test(s)
+
 
 // Sample Tests
 const { assert } = require('chai');
