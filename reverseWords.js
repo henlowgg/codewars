@@ -8,20 +8,7 @@
 
 function reverseWords(str) {
     // Go for it
-    str = str.split("");
-    let start = 0;
-    for (let end = 0;
-            end < str.length; end++)
-            {
-                if (str[end] == ' ')
-                {
-                    reverseWords(str, start, end);
-                    start = end +1
-                }
-            }
-            reverseWords(str, 0, str.length - 1);
-            reverseWords(str, 0, str.length - 1);
-            return str.join("");
+    return str.split(' ').map(word=>word.split('').reverse().join('')).join(' ')
 }
 
 
