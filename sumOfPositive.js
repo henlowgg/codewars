@@ -8,8 +8,15 @@
 
 // Solution
 
+// First filter all the positive numbers, only the numbers greater than 0
+// once you have that, use .reduce (aka find the sum of the positive numbers)
+// take the function of (previousValue, currentValue)
+// return total + currentValue
+
 function positiveSum(arr) {
-  
+  return arr.filter(number => number > 0).reduce((total, currentValue) => {
+    return total + currentValue;
+  }, 0)
 }
 
 // Sample Tests
