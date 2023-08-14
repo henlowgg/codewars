@@ -13,10 +13,12 @@
 // Solution
 
 // Solution notes
+// Dedupe an array
+// use the spread operator, with [...new Set(a)];
 
 function distinct(a) {
-    return [];
-  }
+    return [...new Set(a)];
+}
 
 // Sample Tests
 
