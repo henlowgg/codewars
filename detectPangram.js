@@ -8,6 +8,24 @@
 
 // Solution Notes
 
+// First thoughts: since instructions are saying to return true or false, we are obviously looking at a boolean
+// make sure to ignore numbers and punctuation
+
+// 1. Convert string to lower case and split to ''
+// const splStr = string.toLowerCase().split('');
+// 2. Split 'abcdefghijklmnopqrstuvwxyz' that will create an array of each letter
+// const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+// 3. Loop over each letter in 'string' (splitted)
+// for (const letter of splStr)
+// 4. Loop over each letter in 'alphabet' (splitted)
+// for (let i = 0; i < alphabet.length; i++)
+// 5. If 'letter' is 'alphabet at popsition 'i', setting alphabet at 'i' to Empty String
+// if (letter === alphabet[i]) alphabet[i] = '';
+// 6. Filtering alphabet with the values that aren't equal to ''
+// alphabet = alphabet.filter(value => value !== '');
+// 7. Return true if alphabet.length is 0, false otherwise
+// return !alphabet.length ? true : false;
+
 function isPangram(string){
     //...
 }
