@@ -26,8 +26,14 @@
 // 7. Return true if alphabet.length is 0, false otherwise
 // return !alphabet.length ? true : false;
 
-function isPangram(string){
-    //...
+const isPangram = string => {
+    const splStr = string.toLowerCase().split('');
+    let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+    for (const letter of splStr)
+    for (let i = 0; i < alphabet.length; i++)
+if (letter === alphabet[i]) alphabet[i] = '';
+alphabet = alphabet.filter(value => value !== '');
+return !alphabet.length ? true : false;
 }
 
 // Sample Tests
